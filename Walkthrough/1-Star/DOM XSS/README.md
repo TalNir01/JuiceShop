@@ -1,5 +1,5 @@
 # DOM XSS
-
+Read: https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html
 ## Part 1 - Challenge
 ### Instructions
 Perform a DOM XSS attack with 
@@ -40,3 +40,15 @@ So I put the `<iframe src="http://172.29.63.151:8080/hello.html"/>` Also I start
 
 
 For some reason I couldn't get their `iframe` to work, but I hope it will be sufficient to "PROOF" the concept is working...
+
+At the end this `<iframe src="javascript:alert(`xss`)">` input for the `search` bar worked!!
+
+##### Coding Challenge
+
+From given code we might see a bit of "cleaning" of input, but now security sanitization...
+The most critical line is 6: `this.searchValue = this.sanitizer.bypassSecurityTrustHtml(queryParam)`
+
+The internal user input should not contain HTML, so no need to santaize or parser it, just deploy as text, meaning we picked solution 4
+```javascript
+this.searchValue = queryParam
+```

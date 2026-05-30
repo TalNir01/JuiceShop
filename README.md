@@ -1,4 +1,4 @@
-# Walkthrough of Juice-Shop Web Application Challanges
+# Walkthrough of Juice-Shop Web Application Challenges
 
 ## Step 1:
 I will write solutions for how many challenges I can here. also it will include scripts and utilties & techniques i am trying.
