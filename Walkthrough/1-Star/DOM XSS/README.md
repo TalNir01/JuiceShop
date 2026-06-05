@@ -42,8 +42,10 @@ So I put the `<iframe src="http://172.29.63.151:8080/hello.html"/>` Also I start
 For some reason I couldn't get their `iframe` to work, but I hope it will be sufficient to "PROOF" the concept is working...
 
 At the end this `<iframe src="javascript:alert(`xss`)">` input for the `search` bar worked!!
+Why is it considered `DOM XSS`, the search bar doesn't send a request (api call) to the actual server, therfore the entire "vulnerable" code is client side and the server doesn't now or receive anything weird.
 
-##### Coding Challenge
+
+#### Coding Challenge
 
 From given code we might see a bit of "cleaning" of input, but now security sanitization...
 The most critical line is 6: `this.searchValue = this.sanitizer.bypassSecurityTrustHtml(queryParam)`
