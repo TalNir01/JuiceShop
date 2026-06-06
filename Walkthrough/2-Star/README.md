@@ -11,8 +11,8 @@
 | AI Debugging | Broken Access Control | Can't make ollama work, skip | NO |
 | Chatbot Prompt Injection | Injection | Can't make ollama work, skip | NO |
 | Deprecated Interface | Security Misconfiguration | Upload xml (as multipart) to `/file-upload` | YES |
-| Empty User Registration | Improper Input Validation |  | NO |
-| Five-star Feedback | Broken Access Control |  | NO |
+| Empty User Registration | Improper Input Validation | Remove email and password from `/api/Users` | YES |
+| Five-star Feedback | Broken Access Control | Log in as `ADMIN` and use `/#/administration` page. | YES |
 | Login MC SafeSearch | Sensitive Data Exposure |  | NO |
 | Meta Geo Stalking | Sensitive Data Exposure |  | NO |
 | NFT Takeover | Sensitive Data Exposure |  | NO |
