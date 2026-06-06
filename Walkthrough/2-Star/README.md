@@ -8,9 +8,9 @@
 | Admin Section | Broken Access Control | Via `/#/administration` url | YES |
 | Password Strength | Broken Authentication | Brute-Force python script | YES |
 | View Basket | Broken Access Control | POST-Auth IDOR at `/rest/basket/USER-ID` | YES |
-| AI Debugging | Broken Access Control |  | NO |
-| Chatbot Prompt Injection | Injection |  | NO |
-| Deprecated Interface | Injection |  | NO |
+| AI Debugging | Broken Access Control | Can't make ollama work, skip | NO |
+| Chatbot Prompt Injection | Injection | Can't make ollama work, skip | NO |
+| Deprecated Interface | Security Misconfiguration | Upload xml (as multipart) to `/file-upload` | YES |
 | Empty User Registration | Improper Input Validation |  | NO |
 | Five-star Feedback | Broken Access Control |  | NO |
 | Login MC SafeSearch | Sensitive Data Exposure |  | NO |
@@ -24,3 +24,6 @@
 ## Reading Material
 1. https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
 2. https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html
+3. https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html
+4. https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
+5. https://cheatsheetseries.owasp.org/cheatsheets/Web_Service_Security_Cheat_Sheet.html

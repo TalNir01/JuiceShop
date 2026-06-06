@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+  <book category="fiction">
+    <title lang="en">The Great Gatsby</title>
+    <author>F. Scott Fitzgerald</author>
+    <year>1925</year>
+    <price>10.99</price>
+  </book>
+  <book category="tech">
+    <title lang="en">Clean Code</title>
+    <author>Robert C. Martin</author>
+    <year>2008</year>
+    <price>39.99</price>
+  </book>
+</bookstore>
