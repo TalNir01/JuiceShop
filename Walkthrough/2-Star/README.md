@@ -16,10 +16,10 @@
 | Login MC SafeSearch | Sensitive Data Exposure | Rapper That Sings On CyberSecurity | YES |
 | Meta Geo Stalking | Sensitive Data Exposure | Used `exiftool` to extract GPS Coordinations | YES |
 | NFT Takeover | Sensitive Data Exposure | A comment on `About-Us` that led to the `NFT` account private pass-phrase | YES |
-| Password Hash Leak | Sensitive Data Exposure |  | NO |
-| Security Policy | Misc |  | NO |
-| Visual Geo Stalking | Sensitive Data Exposure |  | NO |
-| Weird Crypto | Cryptographic issues |  | NO |
+| Password Hash Leak | Sensitive Data Exposure | Found `/rest/user/whoami?fields=password` | YES |
+| Security Policy | Misc | Access `/ftp/legal.md` | Yes |
+| Visual Geo Stalking | Sensitive Data Exposure | View the sign (small) at emma photo | YES |
+| Weird Crypto | Cryptographic issues | Passwords are stored as `MD5` | YES |
 
 ## Reading Material
 1. https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
