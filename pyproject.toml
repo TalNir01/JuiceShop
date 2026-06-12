@@ -3,9 +3,10 @@ name = "juiceshop"
 version = "0.1.0"
 description = "Collection of scripts and docs that explains several challenges in OWASP JuiceShop"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.10"
 dependencies = [
     "cryptography>=48.0.0",
+    "eth-account>=0.13.7",
     "httpx>=0.28.1",
     "loguru>=0.7.2",
     "pydantic>=2.13.4",

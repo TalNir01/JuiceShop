@@ -13,9 +13,9 @@
 | Deprecated Interface | Security Misconfiguration | Upload xml (as multipart) to `/file-upload` | YES |
 | Empty User Registration | Improper Input Validation | Remove email and password from `/api/Users` | YES |
 | Five-star Feedback | Broken Access Control | Log in as `ADMIN` and use `/#/administration` page. | YES |
-| Login MC SafeSearch | Sensitive Data Exposure |  | NO |
-| Meta Geo Stalking | Sensitive Data Exposure |  | NO |
-| NFT Takeover | Sensitive Data Exposure |  | NO |
+| Login MC SafeSearch | Sensitive Data Exposure | Rapper That Sings On CyberSecurity | YES |
+| Meta Geo Stalking | Sensitive Data Exposure | Used `exiftool` to extract GPS Coordinations | YES |
+| NFT Takeover | Sensitive Data Exposure | A comment on `About-Us` that led to the `NFT` account private pass-phrase | YES |
 | Password Hash Leak | Sensitive Data Exposure |  | NO |
 | Security Policy | Misc |  | NO |
 | Visual Geo Stalking | Sensitive Data Exposure |  | NO |
