@@ -2,13 +2,13 @@
 ## Challenges
 | Name  | Type | Notes | Solved |
 |-------|-----|------------|------- |
-| Forged Feedback | Broken Access Control |  | NO |
-| Login Jim | Injection |  | NO |
-| Login Bender | Injection |  | NO |
-| API-only XSS | XSS |  | NO |
-| Admin Registration | Improper Input Validation |  | NO |
-| Bjoern's Favorite Pet | Broken Authentication |  | NO |
-| CAPTCH Bypass | Broken Anti Automation |  | NO |
+| Forged Feedback | Broken Access Control | Replace `UserId` at API request to `/api/Feedbacks/` | YES |
+| Login Jim | Injection | SQLi at `/rest/user/login` | YES |
+| Login Bender | Injection | SQLi at `/rest/user/login` | YES |
+| API-only XSS | XSS | Failed, something didn't worked! | NO |
+| Admin Registration | Improper Input Validation | Register user with `role` of `admin` | YES |
+| Bjoern's Favorite Pet | Broken Authentication | From Twitter, Cat named `Zaya` | YES |
+| CAPTCHA Bypass | Broken Anti Automation | Captcha is chosen by an ID controlled by user | YES |
 | CSRF | Broken Access Control |  | NO |
 | Client-Side XSS Protection | XSS |  | NO |
 | Database Schema | Injection |  | NO |
