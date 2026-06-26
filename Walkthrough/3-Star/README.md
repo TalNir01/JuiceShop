@@ -1,5 +1,7 @@
 # 3-Star Challenges List
+
 ## Challenges
+
 | Name  | Type | Notes | Solved |
 |-------|-----|------------|------- |
 | Forged Feedback | Broken Access Control | Replace `UserId` at API request to `/api/Feedbacks/` | YES |
