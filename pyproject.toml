@@ -11,4 +11,5 @@ dependencies = [
     "loguru>=0.7.2",
     "pydantic>=2.13.4",
     "pyjwt>=2.13.0",
+    "sqlmap>=1.10.6",
 ]

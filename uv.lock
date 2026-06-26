@@ -682,6 +682,7 @@ dependencies = [
     { name = "loguru" },
     { name = "pydantic" },
     { name = "pyjwt" },
+    { name = "sqlmap" },
 ]
 
 [package.metadata]
@@ -692,6 +693,7 @@ requires-dist = [
     { name = "loguru", specifier = ">=0.7.2" },
     { name = "pydantic", specifier = ">=2.13.4" },
     { name = "pyjwt", specifier = ">=2.13.0" },
+    { name = "sqlmap", specifier = ">=1.10.6" },
 ]
 
 [[package]]
@@ -1037,6 +1039,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/1b/2d/439b0728a92964a04d9c88ea1ca9ebb128893fbbd5834faa31f987f2fd4c/rlp-4.1.0.tar.gz", hash = "sha256:be07564270a96f3e225e2c107db263de96b5bc1f27722d2855bd3459a08e95a9", size = 33429, upload-time = "2025-02-04T22:05:59.089Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/99/fb/e4c0ced9893b84ac95b7181d69a9786ce5879aeb3bbbcbba80a164f85d6a/rlp-4.1.0-py3-none-any.whl", hash = "sha256:8eca394c579bad34ee0b937aecb96a57052ff3716e19c7a578883e767bc5da6f", size = 19973, upload-time = "2025-02-04T22:05:57.05Z" },
+]
+
+[[package]]
+name = "sqlmap"
+version = "1.10.6"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/b3/ca/729c24c0b871742419a8861d3efe7be911da368858af0f1978c54d7364a5/sqlmap-1.10.6.tar.gz", hash = "sha256:f1dc30ef6bba635586dc5cb7b1bf113d5a1621a3d6eae356844ecc96209b322b", size = 7230175, upload-time = "2026-06-02T11:06:40.314Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/55/30/9cfb92678339ff160d35370b92c3379c3c7a4150655f1f128145c3efeee7/sqlmap-1.10.6-py2.py3-none-any.whl", hash = "sha256:46740b1b8de2d4de726834a1e96483123411a570bf944704e9ce14b73e965648", size = 7547372, upload-time = "2026-06-02T11:06:37.895Z" },
 ]
 
 [[package]]

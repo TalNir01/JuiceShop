@@ -1,4 +1,5 @@
 # API-Only XSS
+
 **Description**
 Perform a persisted XSS attack with <iframe src="javascript:alert(`xss`)"> without using the frontend application at all.
 
@@ -10,9 +11,11 @@ Topic: XSS
 ### Web Solution
 
 The payload we want to inject:
+
 ```html
 <iframe src="javascript:alert(`xss`)">
 ```
+
 Ok, so we want a persisted XSS, something that sits on the "DB".
 
 Also we must use API only, therefore we must find an API call that can generate content on the webfrontend
@@ -20,6 +23,7 @@ Also we must use API only, therefore we must find an API call that can generate 
 Enumeration (using `admin@juice-sh.op`)
 
 #### At `/#/administration`
+
 we have a `Customer Feedback` table, with a list of customer feedbacks.
 
 Tried it completely ignored the vulnerable iframe data...
@@ -58,4 +62,11 @@ Content-Length: 90
 }
 ```
 
-COULDN"T MAKE THIS WORK FROM ME
+Actually worked for me while trying to solve the `Client-Side XSS Protection` challenge
+
+### Coding Challenge
+
+We first must identify the vulnerable line
+which is `... = this.sanitizer.bypassSecurityTrustHtml(...)`
+
+To fix we should not trust it and keep referring it as a string!
